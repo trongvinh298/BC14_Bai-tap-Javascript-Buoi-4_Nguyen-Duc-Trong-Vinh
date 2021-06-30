@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Bài tập 1  -->
+    <div>
+      <h1>Bài Tập 1</h1>
+      <h3>Nhập vào 3 số nguyên</h3>
+      <label for="">Số thứ nhất</label> <input id="soThuNhat" type="number" />
+      <label for="">Số thứ hai</label> <input id="soThuHai" type="number" />
+      <label for="">Số thứ ba</label> <input id="soThuBa" type="number" />
+      <button onclick="sapXep()">Sắp xếp</button>
+      <div id="divSapXep" style="display: none">
+        Các số sau khi sắp xếp theo thứ tự tăng dần:
+        <span id="sapXep"></span>
+      </div>
+    </div>
+
+    <!-- Bài tập 2  -->
+    <div>
+      <h1>Bài tập 2</h1>
+      <h3>Chọn người sử dụng máy</h3>
+      <label for="user">Bạn là:</label>
+      <select id="user" name="user">
+        <option value="dad">Bố</option>
+        <option value="mom">Mẹ</option>
+        <option value="brother">Anh trai</option>
+        <option value="sister">Em gái</option>
+      </select>
+      <button onclick="chaoHoi()">Chào hỏi</button>
+      <p id="chaoHoi" style="display: none; font-size: 2em">
+        Xin chào <span style="color: red" id="nguoiChao"></span>
+      </p>
+    </div>
+
+    <!-- Bài tập 3  -->
+    <div>
+      <h1>Bài tập 3</h1>
+      <h3>Nhập vào 3 số nguyên bất kì</h3>
+      <label for="">Số thứ nhất</label> <input id="soThu1" type="number" />
+      <label for="">Số thứ hai</label> <input id="soThu2" type="number" />
+      <label for="">Số thứ ba</label> <input id="soThu3" type="number" />
+      <button onclick="timSoChanLe()">Tính nào</button>
+      <div id="timChanLe" style="display: none; font-size: 2em">
+        Có
+        <span style="color: red" id="xuatSoChan"></span>
+        và
+        <span style="color: red" id="xuatSoLe"></span>
+      </div>
+    </div>
+
+    <!-- Bài tập 4  -->
+    <div>
+      <h1>Bài tập 4</h1>
+      <h3>Nhập vào chiều dài 3 cạnh của tam giác</h3>
+      <label for="">Cạnh thứ nhất</label> <input id="canhThu1" type="number" />
+      <label for="">Cạnh thứ hai</label> <input id="canhThu2" type="number" />
+      <label for="">Cạnh thứ ba</label> <input id="canhThu3" type="number" />
+      <button onclick="kiemTra()">Kiểm tra</button>
+      <p id="kiemTra" style="display: none"></p>
+    </div>
+
+    <!-- Bài tập 5  -->
+    <div>
+      <h1>Bài tập 5</h1>
+      <h3>Nhập vào ngày, tháng, năm</h3>
+      <label for="">Ngày</label> <input id="soNgay" type="number" />
+      <label for="">Tháng</label> <input id="soThang" type="number" />
+      <label for="">Năm</label> <input id="soNam" type="number" />
+      <button onclick="tinhNgayThangNam()">Xuất kết quả</button>
+      <p style="font-size: 1em">Ngày tiếp theo:</p>
+      <p
+        style="display: none; font-size: 2em; color: red"
+        id="ngayTiepTheo"
+      ></p>
+      <p style="font-size: 1em">Ngày trước đó:</p>
+      <p style="display: none; font-size: 2em; color: red" id="ngayTruocDo"></p>
+    </div>
+
+    <!-- Bài tập 6  -->
+    <div>
+      <h1>Bài tập 6</h1>
+      <h3>Nhập vào tháng, năm</h3>
+      <label for="">Tháng</label> <input id="soThang1" type="number" />
+      <label for="">Năm</label> <input id="soNam1" type="number" />
+      <button onclick="tinhNgayTrongThang()">Xuất kết quả</button>
+      <p id="ngayTrongThang" style="display: none; font-size: 2em"></p>
+    </div>
+
+    <!-- Bài tập 7  -->
+    <div>
+      <h1>Bài tập 7</h1>
+      <h3>Nhập vào số nguyên có 3 chữ số</h3>
+      <input id="soNguyen3" type="number" />
+      <button onclick="docSoNguyen()">Đọc số</button>
+      <p id="cachDoc" style="display: none; font-size: 2em">
+        <span id="hangTram"></span>
+        <span id="hangChuc"></span>
+        <span id="hangDonVi"></span>
+      </p>
+    </div>
+
+    <!-- Bài tập 8  -->
+    <div>
+      <h1>Bài tập 8</h1>
+      <h3>Nhập toạ độ trường học và nhà của các sinh viên</h3>
+      <div>
+        <label for="">Trường học</label>
+        <input id="xTruong" type="number" placeholder="Toạ độ X" />
+        <input id="yTruong" type="number" placeholder="Toạ độ Y" />
+      </div>
+      <div>
+        <label for="">Sinh viên A</label>
+        <input id="xA" type="number" placeholder="Toạ độ X" />
+        <input id="yA" type="number" placeholder="Toạ độ Y" />
+      </div>
+      <div>
+        <label for="">Sinh viên B</label>
+        <input id="xB" type="number" placeholder="Toạ độ X" />
+        <input id="yB" type="number" placeholder="Toạ độ Y" />
+      </div>
+      <div>
+        <label for="">Sinh viên C</label>
+        <input id="xC" type="number" placeholder="Toạ độ X" />
+        <input id="yC" type="number" placeholder="Toạ độ Y" />
+      </div>
+      <button onclick="tinhKhoangCach()">Xuất kết quả</button>
+      <p id="tenSinhVien" style="display: none; font-size: 2em"></p>
+    </div>
+
+    <script src="./js/Bai-tap-1.js"></script>
+    <script src="./js/Bai-tap-2.js"></script>
+    <script src="./js/Bai-tap-3.js"></script>
+    <script src="./js/Bai-tap-4.js"></script>
+    <script src="./js/Bai-tap-5.js"></script>
+    <script src="./js/Bai-tap-6.js"></script>
+    <script src="./js/Bai-tap-7.js"></script>
+    <script src="./js/Bai-tap-8.js"></script>
+  </body>
+</html>
